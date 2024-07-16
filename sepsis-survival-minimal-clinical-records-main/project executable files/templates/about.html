@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>about</title>
+</head>
+<body bgcolor="black">
+   <header>
+       <div  style="background-color: rgb(65, 132, 209); padding: 25px;">
+          <a href="{{ url_for('home') }}" style="color: rgb(58, 39, 118); text-decoration: none; float: right; font-size: 25px;"><b>Home</b></a>
+          <a href= "{{ url_for('predict') }}" style="color: rgb(62, 32, 100); text-decoration: none; float: right; margin-right: 20px; font-size: 25px;"><b>Predict</b></a>
+    
+       </div> 
+       </header>
+    
+
+      <h1 style="font-family: Arial; color: antiquewhite; text-align: center; font-size: 50px;"><i>What is Sepsis?</i></h1>
+
+      <p style="font-size:x-large;  color: antiquewhite;">
+       Sepsis is a serious condition in which the body responds improperly to an infection. The infection-fighting processes turn on the body, causing the organs to work poorly.
+       
+       Sepsis may progress to septic shock. This is a dramatic drop in blood pressure that can damage the lungs, kidneys, liver and other organs. When the damage is severe, it can lead to death.
+       
+       Early treatment of sepsis improves chances for survival.
+        
+       </p>
+      <div style="text-align: center;">
+       <img src="{{url_for('static',filename='symptoms.jpg')}}"  width="1000px" height="500px">
+       </div>
+       <h1 style="font-family: Arial; color: antiquewhite; text-align: center; font-size: 50px;"><i>What is Septic Shock?</i></h1>
+       <p style="font-size:x-large;  color: antiquewhite;">
+         Septic shock is a critical condition and carries a high mortality rate. Bacterial infections are the most common causes of sepsis. They can originate externally in wounds or as a result of conditions such as pneumonia. Anyone who suspects that they or someone else may have sepsis or have gone into septic shock should seek emergency care.
+       </p>
+       <div style="text-align: center;">
+         <img style="margin-top: 50px;" src="{{url_for('static',filename='def.jpg')}}" width="1000px" height="500px" >
+       </div>
+
+         <footer>
+            <div style="background-color: lightskyblue; padding: 30px; text-align: center;">
+            
+               <p style="font-size: 25px;">&copy; copyright 2024 sepsis survival. All rights reserved.</p>
+
+
+            </div>
+         </footer> 
+  
+</body>
+</html>

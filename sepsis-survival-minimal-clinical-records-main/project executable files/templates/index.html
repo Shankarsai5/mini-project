@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div id="navbar"> 
+            <a href="{{ url_for('about') }}" style="text-decoration: none; font-size: 30px; margin-top: 15px; margin-left: 100px;"><b>About-Sepsis</b></a>
+            <a href="{{ url_for('predict') }}" style="text-decoration: none; font-size: 30px; margin-top: 15px;"><b>Predict</b></a>   
+        </div> 
+    </header>
+    <div class="moving-text">
+    <marquee behaviour="alternate" ><p style="font-size: 50px; font-family: Impact; text-align: right; margin-top: 200px; color: black"> SURVIVAL  OF  SEPSIS - <br>
+        using  minimal  clinical  records
+    </p>
+    </marquee>
+    </div>
+</body>
+</html>

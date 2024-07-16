@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='out.css') }}">
+</head>
+<body>
+    <header>
+        <div style="background-color: rgb(65, 187, 218); padding: 25px;">
+            <a href="{{ url_for('home') }}" style="color: rgb(33, 31, 99); text-decoration: none; float: right; font-size: 25px;"><b>Home</b></a>
+            <a href="{{ url_for('predict') }}" style="color: rgb(36, 46, 104); text-decoration: none; float: right; margin-right: 20px; font-size: 25px;"><b>Predict Again</b></a>
+        </div>
+    </header>
+    <h1 style="text-align: center;"><font color="blue" size="55px"><i>Prediction Result</i></font></h1>
+    <div style="text-align: center;">
+        <h2>The predicted outcome is: <span style="color: red;">{{ prediction }}</span></h2>
+        {% if prediction == 'Dead' %}
+            <h1><i>Person Not survived</i></h1>
+        {% elif prediction == 'Alive' %}
+            <h1><i>Pesron Survived</i></h1>
+        {% endif %}
+    </div>
+</body>
+</html>
